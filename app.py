@@ -24,7 +24,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 # CONFIG — edit these to match your project
 # ──────────────────────────────────────────────────────────────────────────
 BASE_MODEL_NAME = "Qwen/Qwen2.5-1.5B-Instruct"   # base model the adapter was trained on
-ADAPTER_PATH = ".\Qwen2.5-1.5B"                          # local folder with your fine-tuned adapter/tokenizer
+ADAPTER_PATH = "./Qwen2.5-1.5B"                          # local folder with your fine-tuned adapter/tokenizer
 USE_PEFT_ADAPTER = True                         # False if you saved a merged full model instead
 LOAD_IN_4BIT = True                             # keep True if running on limited VRAM (e.g. T4/3050)
 MAX_NEW_TOKENS = 256
